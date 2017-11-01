@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  uexkb-db:
+  db:
       build:
         context: .
         dockerfile: db.dockerfile
@@ -17,7 +17,7 @@ services:
       ports:
         - "3306:3306"
 
-  uexkb-web:
+  web:
     build:
       context: .
       dockerfile: web.dockerfile
@@ -26,4 +26,4 @@ services:
     ports:
       - 8080:80
     links:
-      - uexkb-db:uexkb-db
+      - db:db
