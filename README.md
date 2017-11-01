@@ -1,1 +1,3 @@
-# docker-apache-php-mysql
+# Docker Apache+PHP+MySQL stack
+
+Cause I am lazy.
